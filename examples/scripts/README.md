@@ -126,10 +126,30 @@ python examples/scripts/reward_trainer.py --config examples/cli_configs/reward_l
 
    * 8-bit quantization (`load_in_8bit: true`) or disabled quantization for Windows.
 
-6. **Evaluation & saving**
+6. Evaluation & Saving
 
-   * Step-based evaluation and saving (`eval_steps: 25`, `save_total_limit: 3`).
+During training, the reward model performs step-based evaluation and automatically saves checkpoints. You can configure these behaviors in your YAML config file (examples/cli_configs/reward_lora_config.yaml).
 
+```yml
+# 1. Evaluation settings
+eval_strategy: "steps"     # Can also be "epochs" if you prefer epoch-based evaluation
+eval_steps: 25             # Evaluate the model every 25 training steps
+
+# 2. Checkpoint saving settings
+save_strategy: "steps"     # Can also be "epochs"
+save_steps: 50             # Save a checkpoint every 50 steps
+save_total_limit: 3        # Keep only the 3 most recent checkpoints
+
+# 3. Output directories and logging
+  # 1. Directory to save checkpoints, logs, and model outputs
+  output_dir: "runs/reward-lmarena-preference-data-edu-en-first-round-LoRA-rank8"
+
+  # 2. Name of this training run (used in WandB)
+  run_name: "reward-lmarena-preference-data-edu-en-first-round-LoRA-rank8"
+
+  # 3. Project name in WandB
+  project_name: "reward-model-training"
+``` 
 ## Summary
 
 * Edit the **config file** for model, dataset, and batch size.
