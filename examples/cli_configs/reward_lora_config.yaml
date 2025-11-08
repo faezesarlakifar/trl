@@ -62,8 +62,8 @@ logging_first_step: true
 #log_completions: true  # Log completions for debugging and monitoring
 #num_completions_to_print: 3  # Number of completions to show in console
 
-output_dir: "runs/skywork-reward-v2-llama-3.2-1B-rank128-eduarena-10k-data-lmarena-all-data"
-run_name: "reward-skywork-reward-v2-llama-3.2-1B-rank128-eduarena-10k-data-lmarena-all-data"
+output_dir: "runs/skywork-reward-v2-llama-3.2-1B-rank128-eduarena-train-data-eduarena-test"
+run_name: "reward-skywork-reward-v2-llama-3.2-1B-rank128-eduarena-train-data-eduarena-test"
 project_name: "reward-model-training" 
 report_to: ["wandb"]
 
