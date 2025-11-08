@@ -14,7 +14,7 @@ num_labels: 1  # Single scalar reward score (default). Access via: model(**input
 # Option 1: prompt, response_a, response_b, preference (0 for A, 1 for B)
 # Option 2: prompt, chosen, rejected
 datasets:
-  - path: "AmirMohseni/lmarena_one_turn_one_eval_order_one"
+  - path: "AmirMohseni/lmarena-preference-data-edu-en-first-round"
     split: "train"
 
 # Optional validation dataset configuration
