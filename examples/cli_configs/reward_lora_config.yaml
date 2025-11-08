@@ -19,7 +19,7 @@ datasets:
 
 # Optional validation dataset configuration
 validation_datasets:
-  - path: "AmirMohseni/lmarena_one_turn_one_eval_order_one"
+  - path: "AmirMohseni/lmarena-preference-data-edu-en-first-round"
     split: "test"
     
 # Training arguments optimized for reward model training
