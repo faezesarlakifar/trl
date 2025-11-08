@@ -58,8 +58,8 @@ field_mapping:
   rejected_field: "rejected"
 
 # Advanced options
-fp16: true                              # use fp16 for mixed precision
-bf16: false                             # disable bf16 for 8-bit compatibility
+fp16: false
+bf16: true
 dataloader_pin_memory: true
 dataloader_num_workers: 4
 remove_unused_columns: false
