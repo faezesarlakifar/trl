@@ -26,7 +26,7 @@ validation_datasets:
 learning_rate: 1.0e-4  # Higher learning rate for LoRA
 num_train_epochs: 1
 #max_steps: 400
-per_device_train_batch_size: 4
+per_device_train_batch_size: 2
 gradient_accumulation_steps: 4
 gradient_checkpointing: true
 gradient_checkpointing_kwargs:
