@@ -112,9 +112,9 @@ validation_field_mapping:
 
 # Advanced options
 dataloader_pin_memory: true  # Pin memory for faster GPU transfer
-dataloader_num_workers: 4  # Increased for better data loading parallelism
+dataloader_num_workers: 2  # Increased for better data loading parallelism
 remove_unused_columns: false
-dataset_num_proc: 8  # Increased for faster dataset preprocessing
+dataset_num_proc: 4 # Increased for faster dataset preprocessing
 
 # Reproducibility
 dataset_seed: 42
