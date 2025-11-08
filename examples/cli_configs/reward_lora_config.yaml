@@ -19,7 +19,7 @@ datasets:
 
 # Optional validation dataset configuration
 validation_datasets:
-  - path: "AmirMohseni/arena-edu-preference-data-10k"
+  - path: "AmirMohseni/lmarena-preference-data-edu-en-first-round"
     split: "test"
     
 # Training arguments optimized for reward model training
@@ -62,8 +62,8 @@ logging_first_step: true
 #log_completions: true  # Log completions for debugging and monitoring
 #num_completions_to_print: 3  # Number of completions to show in console
 
-output_dir: "runs/skywork-reward-v2-llama-3.2-1B-rank128-lmarena-train-data-eduarena-test-1"
-run_name: "reward-skywork-reward-v2-llama-3.2-1B-rank128-lmarena-train-data-eduarena-test-1"
+output_dir: "runs/skywork-reward-v2-llama-3.2-1B-rank128-lmarena-train-data-lmarena-test"
+run_name: "reward-skywork-reward-v2-llama-3.2-1B-rank128-lmarena-train-data-lmarena-test"
 project_name: "reward-model-training" 
 report_to: ["wandb"]
 
