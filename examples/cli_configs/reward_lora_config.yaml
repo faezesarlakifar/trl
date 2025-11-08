@@ -31,7 +31,7 @@ gradient_accumulation_steps: 4
 gradient_checkpointing: true
 gradient_checkpointing_kwargs:
   use_reentrant: false
-max_length: 8192  # Maximum sequence length for reward model
+max_length: 4096  # Maximum sequence length for reward model
 
 # Learning rate scheduler for better convergence
 lr_scheduler_type: "cosine"  # Cosine annealing for smooth learning rate decay
@@ -115,7 +115,7 @@ dataloader_pin_memory: true  # Pin memory for faster GPU transfer
 dataloader_num_workers: 2  # Increased for better data loading parallelism
 remove_unused_columns: false
 dataset_num_proc: 4 # Increased for faster dataset preprocessing
-load_in_8bit: true
+load_in_4bit: true
 
 # Reproducibility
 dataset_seed: 42
